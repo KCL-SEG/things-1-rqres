@@ -3,6 +3,6 @@ from django.db import models
 # Create your models here.
 
 class Thing(models.Model):
-    name = models.CharField()
+    name = models.CharField(max_length=40)
     description = models.TextField()
     quantity = models.IntegerField()
